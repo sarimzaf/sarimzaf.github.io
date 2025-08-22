@@ -23,7 +23,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Sarim ZaFar"
+  name             : "Sarim Zafar"
   pronouns         : # example: "she/her"  
   bio              : "Research Analyst, IFPRI"
   location         : "Washington, DC"

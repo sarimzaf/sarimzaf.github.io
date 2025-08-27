@@ -11,7 +11,6 @@ redirect_from:
 * I am a Research Analyst at IFPRI (International Food Policy Research Institute) in Washington, DC. I work in the Poverty, Gender and Inclusion department on projects related to education, cash transfers and mental health. [[PGI-IFPRI](https://www.ifpri.org/unit/poverty-gender-and-inclusion-pgi/)]
 * My research interests lie in the intersection of applied micro and behavioral economics, particularly individual behavior, preferences and poverty. 
 * I received my Masters of Research Degree in Economics from [Paris School of Economics](https://www.parisschoolofeconomics.eu/en/teaching/pse-masters-programs/master-analysis-and-policy-in-economics/) and my undergraduate degree in Economics from  [Lahore University of Management Sciences](https://mgshss.lums.edu.pk/).
-* I received my Masters of Research Degree in Economics from [Paris School of Economics](https://www.parisschoolofeconomics.eu/en/teaching/pse-masters-programs/master-analysis-and-policy-in-economics/) and my undergraduate degree in Economics from  [Lahore University of Management Sciences](https://mgshss.lums.edu.pk/).
 
 <!---
 A data-driven personal website
@@ -57,3 +56,5 @@ Example: editing a Markdown file for a talk
 For more info
 ------
 More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+-->
+

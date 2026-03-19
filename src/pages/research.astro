@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Replace or remove the placeholder items below once you have real papers.
+const papers = [
+  {
+    title: 'Working Paper Title Placeholder',
+    authors: 'Sarim Zafar, Co-Author Name',
+    status: 'wip', // 'wip' | 'submitted' | 'published'
+    statusLabel: 'Work in Progress',
+    abstract:
+      'Placeholder abstract. Describe the research question, methodology, and key findings here. This section should be 3–5 sentences summarising what the paper is about.',
+    links: [
+      // { label: 'PDF', href: '#' },
+      // { label: 'SSRN', href: '#' },
+    ],
+  },
+  {
+    title: 'Second Working Paper Title Placeholder',
+    authors: 'Sarim Zafar',
+    status: 'submitted',
+    statusLabel: 'Under Review',
+    abstract:
+      'Placeholder abstract for a second paper. Replace with a real abstract when the paper is ready.',
+    links: [],
+  },
+];
+
+const statusClass: Record<string, string> = {
+  wip: 'status-wip',
+  submitted: 'status-submitted',
+  published: 'status-published',
+};
+---
+
+<Layout title="Research" description="Research papers and working papers by Sarim Zafar.">
+  <div class="page-header">
+    <h1>Research</h1>
+    <p>Working papers and publications in applied microeconomics and behavioral economics.</p>
+  </div>
+
+  <div class="placeholder-notice">
+    <strong>Note:</strong> This page contains placeholder content. Replace the entries below with
+    your actual papers and abstracts.
+  </div>
+
+  <div class="paper-list">
+    {papers.map((paper) => (
+      <article class="paper-item">
+        <h2 class="paper-title">{paper.title}</h2>
+        <p class="paper-authors">{paper.authors}</p>
+        <span class={`paper-status ${statusClass[paper.status]}`}>{paper.statusLabel}</span>
+        <p class="paper-abstract">{paper.abstract}</p>
+        {paper.links.length > 0 && (
+          <div class="paper-links">
+            {paper.links.map((link) => (
+              <a href={link.href}>{link.label}</a>
+            ))}
+          </div>
+        )}
+      </article>
+    ))}
+  </div>
+</Layout>

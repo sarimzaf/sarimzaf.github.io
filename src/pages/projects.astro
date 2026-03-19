@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Replace or remove the placeholder items below once you have real projects.
+const projects = [
+  {
+    title: 'Project Title Placeholder',
+    description:
+      'Placeholder description. Describe what the project does, the problem it solves, and any notable outcomes or technologies used.',
+    tags: ['Python', 'Stata', 'Data Analysis'],
+    links: [
+      // { label: 'GitHub', href: '#' },
+      // { label: 'Report', href: '#' },
+    ],
+  },
+  {
+    title: 'Second Project Title Placeholder',
+    description:
+      'Another placeholder project description. Replace with a short paragraph about this project.',
+    tags: ['R', 'Economics'],
+    links: [],
+  },
+];
+---
+
+<Layout title="Projects" description="Projects by Sarim Zafar.">
+  <div class="page-header">
+    <h1>Projects</h1>
+    <p>A selection of research projects, data work, and other things I have built or contributed to.</p>
+  </div>
+
+  <div class="placeholder-notice">
+    <strong>Note:</strong> This page contains placeholder content. Replace the entries below with
+    your actual projects.
+  </div>
+
+  <div class="project-list">
+    {projects.map((project) => (
+      <article class="project-item">
+        <h2 class="project-title">{project.title}</h2>
+        <p class="project-description">{project.description}</p>
+        {project.tags.length > 0 && (
+          <ul class="interests-list" style="margin-top: 0.75rem;">
+            {project.tags.map((tag) => (
+              <li>{tag}</li>
+            ))}
+          </ul>
+        )}
+        {project.links.length > 0 && (
+          <div class="project-links">
+            {project.links.map((link) => (
+              <a href={link.href}>{link.label}</a>
+            ))}
+          </div>
+        )}
+      </article>
+    ))}
+  </div>
+</Layout>
